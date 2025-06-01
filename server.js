@@ -218,7 +218,7 @@ app.post("/api/manageprod", upload.single('image'), async (req, res) => {
     }
   
   })
-app.get("/fetchproducts",async(req,res)=>
+app.get("/api/fetchproducts",async(req,res)=>
 {
     try
     {
