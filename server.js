@@ -316,7 +316,7 @@ app.post("/api/savecart", async (req, res) => {
     res.status(500).send(e.message)
   }
 })
-app.get("/api/fetchcart/:email", async (req, res) => {
+app.get("/fetchcart/:email", async (req, res) => {
   try {
     const result = await cartModel.find({ email: req.params.email });
     if (result.length > 0) {
